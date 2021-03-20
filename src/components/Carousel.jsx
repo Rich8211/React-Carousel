@@ -25,11 +25,12 @@ export const Carousel = () => {
 
     return (
         <div className="carousel-wrapper">
-            {pictureArr.map((pic, index) => {
+            {pictureArr.map((pic, index) => 
+
                 <div key={index} className={index === position ? "visible" : "hidden"}>
-                    <img src={pic} alt={`image ${index}`}/>
+                    <img className="img" src={pic} alt={`image ${index}`}/>
                 </div>
-            })}
+            )}
 
             <div className="carousel-actions">
                 <button className="left-increment" onClick={incrementLeft}>

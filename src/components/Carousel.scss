@@ -1,0 +1,73 @@
+.carousel-wrapper {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    top: 20%;
+
+    .hidden {
+        display: none;
+    }
+    
+
+    .visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        }
+    
+}
+
+
+
+
+
+.carousel-actions {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    top: 25%;
+    height: 40px;
+
+    .left-increment {
+        margin-left: 20px;
+    }
+
+    .right-increment {
+        margin-right: 20px;
+    }
+
+    button {
+        display: flex;
+        border-radius: 50px;
+        border: 0;
+        font-weight: bold;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5px;
+
+        i {
+            
+            height: 20px;
+        }
+    }
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}
